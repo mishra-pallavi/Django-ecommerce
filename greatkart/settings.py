@@ -149,6 +149,6 @@ MESSAGE_TAGS = {
 # smtp config
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIl_PORT = 587
-EMAIL_HOST_USER = 'glimpsifyofficial@gmail.com'
-EMAIL_HOST_PASSWORD = 'vhjv dmmk loii skbv'
+EMAIL_HOST_USER = 'xxxxxxxxxx@gmail.com'
+EMAIL_HOST_PASSWORD = 'xxxxxxxxxxxxxxxxxxxxxxx'
 EMAIL_USE_TLS = True
