@@ -12,11 +12,19 @@
         <div class="row no-gutters">
             <aside class="col-md-6">
     <article class="gallery-wrap"> 
-        <div class="img-big-wrap">
-           <a href="#"><img src="{{ single_product.image.url }}"></a>
+        <div class="img-big-wrap mainImage">
+           <center><img src="{{ single_product.image.url }}"></center>
         </div> <!-- img-big-wrap.// -->
         
     </article> <!-- gallery-wrap .end// -->
+    <ul class="thumb">
+        <li>
+            <a href="{{ single_product.image.url }}" target="mainImage"><img src="{{ single_product.image.url }}" atl="Product Image"></a>
+            {% for image in product_gallery %}
+                <a href="{{image.image.url}}" target="mainImage"><img src="{{image.image.url}}" atl="Product Image"></a>
+            {% endfor %}
+        </li>
+    </ul>
             </aside>
             <main class="col-md-6 border-left">
     <form action="{% url 'add_cart' single_product.id %}" method="POST">
@@ -24,18 +32,14 @@
         <article class="content-body">
     
             <h2 class="title">{{ single_product.product_name }}</h2>
-            <div class="">
+            <div class="ratting-star">
                 <span>
-                    <div class="ratting-star">
-                        <span>
-                            <i class="fa fa-star{% if single_product.averageReview < 0.5 %}-o{% elif single_product.averageReview >= 0.5 and  single_product.averageReview < 1 %}-half-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if single_product.averageReview < 1.5 %}-o{% elif single_product.averageReview >= 1.5 and  single_product.averageReview < 2 %}-half-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if single_product.averageReview < 2.5 %}-o{% elif single_product.averageReview >= 2.5 and  single_product.averageReview < 3 %}-half-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if single_product.averageReview < 3.5 %}-o{% elif single_product.averageReview >= 3.5 and  single_product.averageReview < 4 %}-half-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if single_product.averageReview < 4.5 %}-o{% elif single_product.averageReview >= 4.5 and  single_product.averageReview < 5 %}-half-o {% endif %}" aria-hidden="true"></i>
-                            <span>{{single_product.countReview}} Reviews</span>
-                        </span>
-                    </div>
+                    <i class="fa fa-star{% if single_product.averageReview < 0.5 %}-o{% elif single_product.averageReview >= 0.5 and  single_product.averageReview < 1 %}-half-o {% endif %}" aria-hidden="true"></i>
+                    <i class="fa fa-star{% if single_product.averageReview < 1.5 %}-o{% elif single_product.averageReview >= 1.5 and  single_product.averageReview < 2 %}-half-o {% endif %}" aria-hidden="true"></i>
+                    <i class="fa fa-star{% if single_product.averageReview < 2.5 %}-o{% elif single_product.averageReview >= 2.5 and  single_product.averageReview < 3 %}-half-o {% endif %}" aria-hidden="true"></i>
+                    <i class="fa fa-star{% if single_product.averageReview < 3.5 %}-o{% elif single_product.averageReview >= 3.5 and  single_product.averageReview < 4 %}-half-o {% endif %}" aria-hidden="true"></i>
+                    <i class="fa fa-star{% if single_product.averageReview < 4.5 %}-o{% elif single_product.averageReview >= 4.5 and  single_product.averageReview < 5 %}-half-o {% endif %}" aria-hidden="true"></i>
+                    <span>{{single_product.countReview}} Reviews</span>
                 </span>
             </div>
             <div class="mb-3"> 

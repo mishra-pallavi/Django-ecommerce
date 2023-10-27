@@ -1,0 +1,7 @@
+SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxx
+DEBUG=xx
+EMAIL_HOST=xxxxxxxxxxxx
+EMAIl_PORT=xxx
+EMAIL_HOST_USER=xxxxxxxx
+EMAIL_HOST_PASSWORD=xxxxxxxxxx
+EMAIL_USE_TLS=xx
