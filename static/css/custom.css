@@ -60,3 +60,44 @@ ul.thumb li img{
   height: 80px;
   border: 1px solid grey;
 }
+
+.btn-primary {
+  background-color: #fc7618 !important;
+  border: 1px solid #fc7618;
+  color: white !important;
+}
+
+.btn-primary :hover{
+  background-color:#fc7618 !important;
+  border: 1px solid #fc7618 !important;
+}
+
+.btn-outline-primary {
+  color: #fc7618;
+  border-color: #fc7618;
+}
+
+.widget-header i {
+  color: white;
+}
+
+.icon-sm {
+  background-color: #fc7618;
+}
+
+a {
+  color: #fc7618 !important;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff !important;
+  background-color: #fc7618;
+  border-color: #fc7618;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #fc7618;
+  border-color: #fc7618;
+}

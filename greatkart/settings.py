@@ -154,3 +154,6 @@ EMAIl_PORT = config('EMAIl_PORT', default=False, cast=int)
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=False, cast=bool)
+
+
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
