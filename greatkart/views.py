@@ -4,7 +4,7 @@ from store.models import Product, ReviewRating
 def home(request):
     products = Product.objects.all().filter(is_available=True) #.order_by('-created_date')
     product_count = products.count()
-
+    reviews = None
     # Get the reviews
     for product in products:
         reviews = ReviewRating.objects.filter(product_id = product.id, status=True)
