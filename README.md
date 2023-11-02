@@ -27,24 +27,25 @@ Glimpsify is a web-based e-commerce platform built using Django, SQLite, HTML, C
 ## Getting Started
 
 1. Clone this repository to your local machine.
-    git clone https://github.com/mishra-pallavi/Django-ecommerce.git
+   - git clone https://github.com/mishra-pallavi/Django-ecommerce.git
    
 3. Create a virtual environment and activate it.
-    python -m venv venv
-    source venv/bin/activate (Linux/Mac) or venv\Scripts\activate (Windows)
+   - python -m venv venv
+   - source venv/bin/activate (Linux/Mac) or
+   - venv\Scripts\activate (Windows)
    
 5. Install the project dependencies.
-    pip install -r requirements.txt
+    - pip install -r requirements.txt
 
 6. Apply database migrations.
-    python manage.py makemigrations
-    python manage.py migrate
+    - python manage.py makemigrations
+    - python manage.py migrate
 
 7. Create an admin user.
-   python manage.py createsuperuser
+   - python manage.py createsuperuser
 
 8. Start the development server.
-    python manage.py runserver
+    - python manage.py runserver
 
 
 
