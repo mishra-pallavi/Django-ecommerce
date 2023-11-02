@@ -48,6 +48,16 @@ Glimpsify is a web-based e-commerce platform built using Django, SQLite, HTML, C
     - python manage.py runserver
 
 
+## Screenshots
+
+## Home Page
+![Screenshot 1](https://drive.google.com/uc?id=1Tkl8hXzp-TCmYiBrXsoPkQ40eL9D0IVH)
+
+## Store Page
+![Screenshot 3](https://drive.google.com/uc?id=1moxqU-Qtq1Y4dtb22Bv-tCwdPxhNLRS3)
+
+## Product Detail Page
+![Screenshot 2](https://drive.google.com/uc?id=1lixwlE7D5IXrEJfqE1daul3CUxbTkFGu)
 
 
 
